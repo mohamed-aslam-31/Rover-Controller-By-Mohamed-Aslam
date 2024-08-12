@@ -1,0 +1,293 @@
+*{
+    padding:0;
+    box-sizing:border-box;
+    margin:0;
+    font-size:10px;
+    
+}
+body{
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+background-color: black;
+font-family: sans-serif;
+}
+
+/* Navigation Section */
+
+.nav-section{
+    padding:1rem 0rem;
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-section nav{
+    width:90%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-section nav ul{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.nav-section nav ul li{
+    padding:1.5rem 3rem;
+    width:100%;
+    font-family: sans-serif;
+}
+.nav-section nav ul li .nav-ul-li-a{
+    text-decoration: none;
+    color: white;
+    font-size:1.6rem;
+    position: relative;
+    transition-duration:0.3s;
+    
+}
+.nav-section nav ul li .nav-ul-li-a:hover {
+   color:#8CC501;
+  }
+  
+.nav-section nav ul li .nav-ul-li-a-animation::before {
+    transition: 300ms;
+    height: 4px;
+    content: "";
+    position: absolute;
+    background-color: #8CC501;
+    border-radius:0.3rem;
+  }
+  
+  .nav-section nav ul li .nav-ul-li-a-animation::before {
+    width:0%;
+    bottom: -8px;
+  }
+  
+  .nav-section nav ul li .nav-ul-li-a-animation:hover::before {
+    width: 100%;
+  }
+
+.nav-logo img{
+    width:8rem;
+    height: fit-content;
+}
+
+/* Login Section */
+
+.login-section{
+    width:90%;
+    height:80vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.login-section-content-container{
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    font-family: sans-serif;
+    position: relative;
+}
+.login-section-content-container h1 .high-lighting-h1{
+    color: #8CC501;
+    font-size:6rem;
+
+}
+.login-section-content-container h1{
+    color: white;
+    font-size:6rem;
+    padding:1rem 0rem;
+}
+.login-section-content-container p{
+    width:100%;
+    color: white;
+    font-size:1.4rem;
+    line-height:3rem;
+    letter-spacing:0.1rem;
+    padding:1rem 0rem;
+    padding-bottom:2rem;
+
+}
+.login-section-content-container{
+    color: white;
+    font-size:2rem;
+}
+
+.login-section-content-container .learn-more-btn-a{
+    text-decoration: none;
+    color: #8CC501;
+    font-size:1.8rem;
+    font-weight:100;
+    padding:1.5rem 3rem;
+    border-radius:3rem;
+    border:0.3rem solid #8CC501;
+}
+.login-section-form-container{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ 
+}
+.login-form-container{
+    width:70%;
+    height:70%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter:blur(40px);
+    border-radius:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:2.5rem;
+    position: relative;
+  
+
+}
+
+.login-form-container h1{
+font-size:1.6rem;
+line-height:2.2rem;
+letter-spacing:0.1rem;
+text-align: center;
+color: white;
+}
+.login-form-container input[type="text"]{
+width:60%;
+padding:1.5rem 3rem;
+background-color: #ffffff00;
+border-radius:5rem;
+border: 0.3rem solid #ffffff;
+background-color: rgba(255, 255, 255, 0);
+color: white;
+outline: none;
+opacity: 0.9; 
+font-size:1.5rem;
+
+
+}
+.login-form-container input[type=text]:focus {
+    border: 3px solid #8CC501;
+  }
+  .login-form-container input[type=text]::placeholder {
+    color:white;
+    opacity: 0.9; 
+    font-size:1.5rem;
+    letter-spacing:0.1rem;
+  } 
+
+  .login-form-container input[type="password"]{
+    width:60%;
+    padding:1.5rem 3rem;
+    
+    border-radius:5rem;
+    border: 0.3rem solid #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    outline: none;
+    opacity: 0.9; 
+    font-size:1.5rem;
+    
+    }
+    .login-form-container input[type=password]:focus {
+        border: 3px solid #8CC501;
+      }
+      .login-form-container input[type=password]::placeholder {
+        color:white;
+        opacity: 0.9; 
+        font-size:1.5rem;
+        letter-spacing:0.1rem;
+      }
+      .alert-container{
+        width:100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom:1rem;
+        display: none;
+      }
+      .login-form-container .alert-container p{
+        color: red;
+        font-size:1.3rem;
+        
+      }
+      .login-form-container .alert-container .danger-icon-img{
+        width: 3rem;
+        height: fit-content;
+        padding:0.4rem;
+      }
+      .login-form-container .login-btn-a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        padding:1.5rem 3rem;
+        background-color: #8CC501;
+        border-radius:3rem;
+        font-weight:100;
+        letter-spacing:0.1rem;
+      }
+      .circle-container-1{
+        width:20rem;
+        height:20rem;
+        background: radial-gradient(circle, rgba(173,255,0,1) 0%, rgba(183,229,0,0.6) 100%);
+        position: absolute;
+        left:0;
+        top:0;
+        border-radius:100%;
+        z-index:-1;
+        animation: nn 6s infinite linear;
+      }
+      .circle-container-2{
+        width:20rem;
+        height:20rem;
+        background: radial-gradient(circle, rgba(173,255,0,1) 0%, rgba(183,229,0,0.6) 100%);
+        position: absolute;
+        right:0;
+        bottom:0;
+        border-radius:100%;
+        z-index:-1;
+        
+      }
+      @keyframes nn {
+
+        0%{
+            top:0rem;
+        }
+        20%{
+            top:0.5rem;
+
+        }
+        40%{
+            top:1rem;
+
+        }
+        60%{
+            top:1.5rem;
+
+        }
+        80%{
+            top:1rem;
+
+        }
+        100%{
+            top:0.5rem;
+
+        }
+        
+      }
